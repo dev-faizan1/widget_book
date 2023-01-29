@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'home_page.dart';
-
 void main() {
   runApp(const MyApp());
 }
@@ -13,11 +12,10 @@ class MyApp extends StatelessWidget {
       title: 'Widget Book',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+
       ),
-      initialRoute: MyHomePage.home,
-      routes: {
-        MyHomePage.home: (context) =>  const MyHomePage(),
-      },
+      home:  MyHomePage(),
+      
     );
   }
 }
