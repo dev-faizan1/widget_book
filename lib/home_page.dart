@@ -1,14 +1,28 @@
 import 'package:flutter/material.dart';
-class MyHomePage extends StatelessWidget {
 
+class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
-      child:  Scaffold(
-        body: Center(
-          child: Text('Widget Book'),
+    return SafeArea(
+      child: Scaffold(
+        body: Table(
+          children: [
+            TableRow(
+              children: [
+                Container(
+                  height: 30,
+                  color: Colors.red,
+                ),
+                Container(
+                  height: 30,
+                  color: Colors.brown,
+                ),
+                TableCell(child: Text('Hello'))
+              ],
+            ),
+          ],
         ),
       ),
     );
